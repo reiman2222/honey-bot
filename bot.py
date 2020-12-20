@@ -30,7 +30,7 @@ async def on_message(message):
     elif 'lol' in content or 'lmao' in content:
         possibleChoices = [
             'I\'m not laughing.',
-            'There\'s nothing funny about Honey.'
+            'There\'s nothing funny about Honey.',
             'I don\'t get it.'
         ]
         response = random.choice(possibleChoices)
