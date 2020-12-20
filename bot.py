@@ -1,5 +1,5 @@
 import os
-
+import random
 import discord
 from dotenv import load_dotenv
 
@@ -27,6 +27,13 @@ async def on_message(message):
         response = 'Not as easy as shopping online with Honey.'
     elif 'amazon' in content or 'newegg' in content:
         response = 'Consider shopping online with Honey.'
+    elif 'lol' in content or 'lmao' in content:
+        possibleChoices = [
+            'I\'m not laughing.',
+            'There\'s nothing funny about Honey.'
+            'I don\'t get it.'
+        ]
+        response = random.choice(possibleChoices)
 
     if response != '':
         await message.channel.send(response)
