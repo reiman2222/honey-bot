@@ -28,6 +28,7 @@ async def on_message(message):
     elif 'amazon' in content or 'newegg' in content:
         response = 'Consider shopping online with Honey.'
 
-    await message.channel.send(response)
+    if response != '':
+        await message.channel.send(response)
 
 client.run(TOKEN)
