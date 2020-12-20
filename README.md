@@ -1,5 +1,5 @@
 # honey-bot
-discord bot
+Funny discord bot. `bot.py` servers as the main function for this repo.
 
 ## Installation
 Requires python3
