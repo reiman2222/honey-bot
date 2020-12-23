@@ -34,6 +34,12 @@ async def on_message(message):
             'I don\'t get it.'
         ]
         response = random.choice(possibleChoices)
+    elif 'money' in content or '$' in content:
+        possibleChoices = [
+            'You could save more with honey.',
+            'Save some money with Honey: https://www.joinhoney.com'
+        ]
+        response = random.choice(possibleChoices)
 
     if response != '':
         await message.channel.send(response)
